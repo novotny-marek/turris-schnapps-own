@@ -266,7 +266,7 @@ generic_list() {
     case "$format" in
         human)
             printf " $(printf "%0.s " $(seq 2 $TBL_NUM))# | Type      | Size        | Date                      | Description\n"
-            printf "-$(printf "%0.s-" $(seq $TBL_NUM))-+-----------+-------------+---------------------------+------------------------------------\n"
+            printf " $(printf "%0.s-" $(seq $TBL_NUM))-+-----------+-------------+---------------------------+------------------------------------\n"
             ;;
         json)
             echo '{ "snapshots": ['
